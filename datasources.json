@@ -1,7 +1,77 @@
 {
     "basemaps": [
         {
-            "name": "NDVI Archive",
+            "name": "Verwaltungsgebiete",
+            "url": "https://sgx.geodatenzentrum.de/wms_vg5000_0101?",
+            "isTileService": false,
+            "layers": ["vg5000_lan","vg5000_rbz","vg5000_krs"],
+            "version": "1.3.0",
+            "transparent": true,
+            "styles": null,
+            "abstract": "",
+            "mapKeyUrl": "",
+            "format": "image/png"
+        },  
+        {
+            "name": "TopoPlus open",
+            "url": "https://sgx.geodatenzentrum.de/wms_topplus_open?",
+            "isTileService": false,
+            "layers": ["web"],
+            "version": "1.3.0",
+            "transparent": true,
+            "styles": null,
+            "abstract": "",
+            "mapKeyUrl": "",
+            "format": "image/png"
+        },
+        {
+            "name": "DWD Niederschlagsradar",
+            "url": "https://maps.dwd.de/geoserver/wms?",
+            "isTileService": false,
+            "layers": ["dwd:Niederschlagsradar"],
+            "version": "1.3.0",
+            "transparent": true,
+            "styles": null,
+            "abstract": "",
+            "mapKeyUrl": "",
+            "format": "image/png"
+        },
+        {
+            "name": "Daily surface reflectance (Sentinel-2)",
+            "url": "https://ows.eo2cube.org/wms?",
+            "isTileService": false,
+            "layers": ["s2_l2a"],
+            "version": "1.3.0",
+            "transparent": true,
+            "styles": null,
+            "abstract": "",
+            "mapKeyUrl": "",
+            "format": "image/png",
+            "center_lat": 53.45,
+            "center_lon": 12.85,
+            "bounds": [
+                [53.1158637944,10.5932460856],[54.6849886830,14.4122799503]
+            ]
+        },
+        {
+            "name": "Vitalitätsdefizit Raps",
+            "url": "https://owsdev.eo2cube.org/wms?",
+            "isTileService": false,
+            "layers": ["s2_vi_evi_diff"],
+            "version": "1.3.0",
+            "transparent": true,
+            "styles": null,
+            "abstract": "",
+            "mapKeyUrl": "",
+            "format": "image/png",
+            "center_lat": 53.45,
+            "center_lon": 12.85,
+            "bounds": [
+                [53.1158637944,10.5932460856],[54.6849886830,14.4122799503]
+            ]
+        },    
+        {
+            "name": "NDVI",
             "url": "https://owsdev.eo2cube.org/wms?",
             "isTileService": false,
             "layers": [
@@ -25,6 +95,41 @@
                     14.4122799503
                 ]
             ]
+        },
+        {
+            "name": "EVI",
+            "url": "https://owsdev.eo2cube.org/wms?",
+            "isTileService": false,
+            "layers": [
+                "s2_vi_evi"
+            ],
+            "version": "1.3.0",
+            "transparent": true,
+            "styles": null,
+            "abstract": "",
+            "mapKeyUrl": "",
+            "format": "image/png",
+            "center_lat": 53.45,
+            "center_lon": 12.85,
+            "bounds": [
+                [
+                    53.1158637944,
+                    10.5932460856
+                ],
+                [
+                    54.6849886830,
+                    14.4122799503
+                ]
+            ]
+        },
+        {
+            "name": "OpenStreetMap",
+            "url": "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+            "isTileService": true,
+            "abstract": "OpenStreetMap contributors",
+            "mapKeyUrl": "",
+            "author": "OpenStreetMap contributors",
+            "format": "image/png"
         }
     ]
 }
