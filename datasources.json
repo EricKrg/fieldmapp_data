@@ -38,7 +38,7 @@
         },
         {
             "name": "Daily surface reflectance (Sentinel-2)",
-            "url": "https://ows.eo2cube.org/wms?",
+            "url": "https://owsdev.eo2cube.org/wms?",
             "isTileService": false,
             "layers": ["s2_l2a"],
             "version": "1.3.0",
