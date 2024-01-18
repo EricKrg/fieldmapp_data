@@ -57,7 +57,7 @@
             "name": "Vitalitätsdefizit Raps",
             "url": "https://owsdev.eo2cube.org/wms?",
             "isTileService": false,
-            "layers": ["s2_vi_ndvi_diff"],
+            "layers": ["s2_vi_evi_diff_rapeseed"],
             "version": "1.3.0",
             "transparent": true,
             "styles": null,
@@ -70,6 +70,40 @@
                 [53.1158637944,10.5932460856],[54.6849886830,14.4122799503]
             ]
         },    
+        {
+            "name": "Vitalitätsdefizit Winterweizen",
+            "url": "https://owsdev.eo2cube.org/wms?",
+            "isTileService": false,
+            "layers": ["s2_vi_ndvi_diff_winter_wheat"],
+            "version": "1.3.0",
+            "transparent": true,
+            "styles": null,
+            "abstract": "",
+            "mapKeyUrl": "",
+            "format": "image/png",
+            "center_lat": 53.45,
+            "center_lon": 12.85,
+            "bounds": [
+                [53.1158637944,10.5932460856],[54.6849886830,14.4122799503]
+            ]
+        }, 
+        {
+            "name": "Vitalitätsdefizit Sommergerste",
+            "url": "https://owsdev.eo2cube.org/wms?",
+            "isTileService": false,
+            "layers": ["s2_vi_ndvi_diff_spring_barley"],
+            "version": "1.3.0",
+            "transparent": true,
+            "styles": null,
+            "abstract": "",
+            "mapKeyUrl": "",
+            "format": "image/png",
+            "center_lat": 53.45,
+            "center_lon": 12.85,
+            "bounds": [
+                [53.1158637944,10.5932460856],[54.6849886830,14.4122799503]
+            ]
+        }, 
         {
             "name": "NDVI",
             "url": "https://owsdev.eo2cube.org/wms?",
